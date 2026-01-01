@@ -1,0 +1,283 @@
+:root {
+    --col-a:#E7ECEF;
+    --col-b:#6096BA;
+    --col-c:#6096BA;
+    --col-d:#A3CEF1;
+    --col-e:#8B8C89;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.banner {
+    padding: 40px;
+    text-align: center;
+    background-color: var(--col-a);
+    margin-bottom: 30px;
+    color: rgb(37, 28, 28);
+    border-radius: 10px;
+}
+
+.banner > strong {
+    color: var(--col-c);
+}
+
+.header-1 {
+    display: flex;
+    flex-flow: row;
+    column-gap: 600px; 
+}
+
+.second-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 80px;
+}
+
+.nav-page {
+    display: flex;
+    flex-flow: row;
+    column-gap: 60px;
+    font-weight: 600;
+}
+
+.nav-page > li > a:hover {
+    color: white;
+    background-color:var(--col-d);
+    text-decoration-color: black;
+} 
+
+li, a {
+    list-style: none;
+    text-decoration-line: none; 
+    color: black;
+}
+
+.main-mid {
+    display: flex;
+    flex: content;
+    column-gap: 50px;
+    justify-content:space-between
+}
+
+.left-proj {
+    width: 25%;
+    padding-left: 6px;
+    color: chocolate;
+}
+
+.proj-list > li {
+    list-style-type: decimal;
+}
+
+.mid-expe {
+    width: 25%;
+    padding-left: 6px;
+}
+
+.mid-expe > a {
+    color: var(--col-b);
+}
+
+.mid-expe > a:hover {
+    color: var(--col-e);
+}
+
+.right-edu {
+    width: 25%;
+    padding-left: 6px;
+}
+
+.course-li li {
+    color: var(--col-d);
+    list-style: circle;
+}   
+
+.testi-revi {
+    border-style: solid;
+    border-width: 2px;
+    border-color: aliceblue;
+    border-radius: 15px;
+    background-color: var(--col-a);
+    width: 50%;
+    padding: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    column-gap: 50px;
+    align-items: center;
+}
+
+#author-name {
+    margin-top: 36px;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+#auth-role {
+    margin-top: -12px;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 100;
+}
+
+
+.foot {
+    padding: 40px;
+    text-align: center;
+    background-color: var(--col-b);
+    border: solid 6px none;
+    margin-top: 30px;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+}
+
+/* only logo and webname style */
+
+#look {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+#webname{
+    display: flex;
+    align-items: center;
+    color: var(--col-b);
+}
+
+/* Mobile view - RWD */
+
+@media (max-width: 1334px) {
+    .mob-view {
+        display: none;
+    }
+}
+
+
+@media (max-width: 700px) {
+    body {
+        /* background-color: var(--col-a); */
+        font-size: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .mob-view {
+        display: flex;
+        align-items: center;
+    }
+    
+    .header-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* #nones-name {
+        /* display: ; */
+    /* } */
+
+    .nav-page {
+       display: flex;
+       justify-content: center;
+    }
+
+   #Mcards {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       row-gap: 20px;
+   }
+
+   .header-1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+   }
+   
+   #Mtesti-revi {
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgb(69, 83, 97);
+        border-radius: 15px;
+        background-color: var(--col-a);
+        width: 90%;
+        text-align: left;
+        padding: 12px;
+    }
+
+    #author-name {
+        margin-top: 36px;
+        font-size: 17px;
+        font-style: italic;
+        font-weight: 700;
+    }
+    
+    #auth-role {
+        margin-top: -12px;
+        font-size: 17px;
+        font-style: italic;
+        font-weight: 100;
+    } 
+
+    .banner {
+        background-color: var(--col-a);
+        margin-top: 10px;
+    }
+
+    .second-main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .left-proj {
+        width: 100%;
+    }
+    
+    h2 {
+        color: #1e48d2;
+        background-color: rgba(116, 114, 114, 0.078);
+        padding: 12px;
+        border-radius: 4px;
+        border-style: outset;
+    }
+
+    .mid-expe > a {
+        color: rgb(65, 139, 219);
+    }
+    
+    .mid-expe > a:hover {
+        color: rgb(58, 108, 128);
+        cursor: pointer;
+    }
+
+    .mid-expe, .right-edu {
+        width: 100%;
+
+    }
+
+    .course-li li {
+        color: var(--col-b);
+        list-style: circle;
+    }
+
+    .foot {
+        padding: 20px;
+        text-align: center;
+        background-color: var(--col-b);
+        border: solid 6px none;
+        margin-top: 30px;
+        border-radius: 10px 10px 0px 0px;
+        color: rgb(251, 251, 251);
+    }
+}
