@@ -166,7 +166,7 @@ li, a {
 @media (max-width: 700px) {
     body {
         /* background-color: var(--col-a); */
-        font-size: 18px;
+        font-size: 16px;
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -280,4 +280,5 @@ li, a {
         border-radius: 10px 10px 0px 0px;
         color: rgb(251, 251, 251);
     }
+
 }
